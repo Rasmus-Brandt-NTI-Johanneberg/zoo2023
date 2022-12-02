@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+
+#container_home{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 2fr 1fr 10fr 6fr;
+    grid-template-areas: 
+    'heu heu'
+    'nau nau'
+    'ash s1h'
+    's2h s2h';
+}
+
+.header_universal{
+    grid-area: heu;
+
+}
+
+.nav_universal{
+    grid-area: nau;
+
+}
+
+#aside_home{
+    grid-area: ash;
+}
+
+#section_1_home{
+    grid-area: s1h;
+}
+
+#section_2_home{
+    grid-area: s2h;
+}
+
+
