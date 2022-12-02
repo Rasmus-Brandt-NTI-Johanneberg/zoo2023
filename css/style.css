@@ -2,6 +2,16 @@ body{
     margin: 0;
 }
 
+.header_universal{
+    grid-area: heu;
+
+}
+
+.nav_universal{
+    grid-area: nau;
+
+}
+
 /* Hem sidans css */
 
 #container_home{
@@ -16,15 +26,7 @@ body{
     's2h s2h';
 }
 
-.header_universal{
-    grid-area: heu;
 
-}
-
-.nav_universal{
-    grid-area: nau;
-
-}
 
 #aside_home{
     grid-area: ash;
@@ -43,7 +45,28 @@ body{
 #container_menu{
         height: auto;
         display: grid;
-        grid-template-columns: 1fr 3fr;
         grid-template-rows: 80px 40px auto auto auto; 
+        grid-template-areas: 
+        'heu'
+        'nau'
+        'ss'
+        'sm'
+        'sd';
     } 
 
+#section_starter{
+    grid-area: ss;
+    min-height: 200px;
+}
+
+#section_maincourse{
+    grid-area: sm;
+    min-height: 200px;
+
+}
+
+#section_desert{
+    grid-area: sd;
+    min-height: 200px;
+
+}
