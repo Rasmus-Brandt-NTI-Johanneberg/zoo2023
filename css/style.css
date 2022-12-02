@@ -2,11 +2,13 @@ body{
     margin: 0;
 }
 
+/* Hem sidans css */
+
 #container_home{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 2fr 1fr 10fr 6fr;
+    grid-template-rows: 80px 40px 5fr 3fr;
     grid-template-areas: 
     'heu heu'
     'nau nau'
@@ -36,4 +38,12 @@ body{
     grid-area: s2h;
 }
 
+/* Meny sidans css */
+
+#container_menu{
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 80px 40px auto auto auto; 
+    } 
 
