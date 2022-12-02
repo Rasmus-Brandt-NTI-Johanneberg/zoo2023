@@ -22,8 +22,8 @@ body{
     grid-template-areas: 
     'heu heu'
     'nau nau'
-    'ash s1h'
-    's2h s2h';
+    'ash p1h'
+    'p2h p2h';
 }
 
 
@@ -32,12 +32,12 @@ body{
     grid-area: ash;
 }
 
-#section_1_home{
-    grid-area: s1h;
+#pictures_1_home{
+    grid-area: p1h;
 }
 
-#section_2_home{
-    grid-area: s2h;
+#pictures_2_home{
+    grid-area: p2h;
 }
 
 /* Meny sidans css */
@@ -49,24 +49,24 @@ body{
         grid-template-areas: 
         'heu'
         'nau'
-        'ss'
-        'sm'
-        'sd';
+        'str'
+        'mac'
+        'des';
     } 
 
-#section_starter{
-    grid-area: ss;
+#starter{
+    grid-area: str;
     min-height: 200px;
 }
 
-#section_maincourse{
-    grid-area: sm;
+#maincourse{
+    grid-area: mac;
     min-height: 200px;
 
 }
 
-#section_desert{
-    grid-area: sd;
+#desert{
+    grid-area: des;
     min-height: 200px;
 
 }
