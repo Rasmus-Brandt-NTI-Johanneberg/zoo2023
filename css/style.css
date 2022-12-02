@@ -90,12 +90,15 @@ body{
 
 #place{
     grid-area: plc;
+    background-color: blue;
 }
 
 #about_zoo{
     grid-area: abz;
+    background-color: red;
 }
 
 #employees{
     grid-area: emp;
+    background-color: aqua;
 }
