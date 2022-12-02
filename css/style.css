@@ -77,7 +77,25 @@ body{
 /* Om oss sidans css */
 
 #container_about_us{
-    height: auto;
+    height: 140vh;
     display: grid;
-    grid-template-rows: 80px 40px auto auto auto; 
+    grid-template-rows: 80px 40px 1fr 1fr 1fr; 
+    grid-template-areas: 
+    'heu'
+    'nau'
+    'plc'
+    'abz'
+    'emp';
 } 
+
+#place{
+    grid-area: plc;
+}
+
+#about_zoo{
+    grid-area: abz;
+}
+
+#employees{
+    grid-area: emp;
+}
