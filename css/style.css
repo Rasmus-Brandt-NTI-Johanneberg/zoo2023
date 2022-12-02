@@ -23,6 +23,11 @@ body{
 }
 
 
+h2{
+    font-size: 1.5rem;
+    height: fit-content;
+}
+
 /* Hem sidans css */
 
 #container_home{
@@ -41,7 +46,13 @@ body{
 
 #aside_home{
     grid-area: ash;
+    padding-left: 10px;
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
+
 
 #pictures_1_home{
     grid-area: p1h;
@@ -49,6 +60,10 @@ body{
 
 #pictures_2_home{
     grid-area: p2h;
+    background-image: url(/img/animals/snake_background.jpg);
+    background-size: cover;
+    background-position: 0px -320px;
+    background-repeat: no-repeat;
 }
 
 /* Meny sidans css */
