@@ -38,8 +38,8 @@ h2{
     grid-template-areas: 
     'heu heu'
     'nau nau'
-    'ash p1h'
-    'p2h p2h';
+    'ash pih'
+    'abl abl';
 }
 
 
@@ -54,38 +54,34 @@ h2{
 }
 
 
-#pictures_1_home{
-    grid-area: p1h;
+#pictures_home{
+    grid-area: pih;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    'a1 a2'
-    'a3 a4';
+    'ac al'
+    'ac al';
 }
 
-#animal_1{
-    grid-area: a1;
-    background-image: url(/img/animals/animal1.png);
+#animal_collage{
+    grid-area: ac;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#animal_2{
-    grid-area: a2;
-    background-image: url(/img/animals/animal2.png);
+#animal_collage img{
+    width: 284.85px;
+    height: 198px;
 }
 
-#animal_3{
-    grid-area: a3;
-    background-image: url(/img/animals/animal3.png);
+#animal_large{
+    grid-area: al;
 }
 
-#animal_4{
-    grid-area: a4;
-    background-image: url(/img/animals/animal4.png);
-}
 
-#pictures_2_home{
-    grid-area: p2h;
+#animal_bottom_large{
+    grid-area: abl;
     background-image: url(/img/animals/snake_background.jpg);
     background-size: cover;
     background-position: 0px -320px;
