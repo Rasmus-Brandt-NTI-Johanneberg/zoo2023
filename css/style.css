@@ -31,6 +31,7 @@ h2{
 /* Hem sidans css */
 
 #container_home{
+    background: repeating-linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -68,6 +69,7 @@ h2{
     grid-area: ac;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 #animal_collage img{
