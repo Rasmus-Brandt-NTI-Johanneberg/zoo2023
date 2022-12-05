@@ -56,6 +56,32 @@ h2{
 
 #pictures_1_home{
     grid-area: p1h;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'a1 a2'
+    'a3 a4';
+}
+
+#animal_1{
+    grid-area: a1;
+    background-image: url(/img/animals/animal1.png);
+}
+
+#animal_2{
+    grid-area: a2;
+    background-image: url(/img/animals/animal2.png);
+}
+
+#animal_3{
+    grid-area: a3;
+    background-image: url(/img/animals/animal3.png);
+}
+
+#animal_4{
+    grid-area: a4;
+    background-image: url(/img/animals/animal4.png);
 }
 
 #pictures_2_home{
