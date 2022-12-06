@@ -67,9 +67,40 @@ h2{
 
 #animal_collage{
     grid-area: ac;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'a1 a2'
+    'a3 a4';
+}
 
+#animal_photo1{
+    background-image: url(/img/animals/animal1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: a1;
+}
+
+#animal_photo2{
+    background-image: url(/img/animals/animal2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: a2;
+}
+
+#animal_photo3{
+    background-image: url(/img/animals/animal3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: a3;
+}
+
+#animal_photo4{
+    background-image: url(/img/animals/animal4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: a4;
 }
 
 #animal_collage img{
