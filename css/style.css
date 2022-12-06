@@ -1,154 +1,211 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Lobster&display=swap');
+
+
+body {
     margin: 0;
 }
 
-.header_universal{
+.header_universal {
     grid-area: heu;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.nav_universal{
+.nav_universal {
     grid-area: nau;
     display: flex;
     justify-content: space-evenly;
-
-}
-
-.nav_universal a{
-    display: flex;
     flex: 1;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
+    border-bottom: solid;
+}
 
+.nav_button {
+    background: none;
+    color: black;
+    font-size: 16px;
+    border: solid;
+    border-radius: 20%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: whitesmoke;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
 
 
-h2{
-    font-size: 1.5rem;
+
+
+h1 {
+    font-size: 34px;
+    font-family: 'Lobster', cursive;
+
+}
+
+h2 {
+    font-size: 21px;
     height: fit-content;
+    font-family: 'Josefin Slab', serif;
 }
 
 /* Hem sidans css */
 
-#container_home{
-    background: repeating-linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+#container_home {
+    background: repeating-linear-gradient(0deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    padding-left: 10px;
+    padding-right: 10px;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 80px 40px 5fr 3fr;
-    grid-template-areas: 
-    'heu heu'
-    'nau nau'
-    'ash pih'
-    'abl abl';
+    row-gap: 5px;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 5% 5% 5fr 3fr;
+    grid-template-areas:
+        'heu heu'
+        'nau nau'
+        'ash pih'
+        'pbl pbl';
 }
 
 
 
-#aside_home{
+#aside_home {
     grid-area: ash;
-    padding-left: 10px;
-    padding-top: 5px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
+#aside_home h2 {
+    margin: 0px;
+}
 
-#pictures_home{
+#aside_home ul {
+    margin-top: 3px;
+}
+
+
+#pictures_home {
     grid-area: pih;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    'ac al'
-    'ac al';
+    grid-template-areas:
+        'ac al'
+        'ac al';
 }
 
-#animal_collage{
+#animal_collage {
     grid-area: ac;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    'a1 a2'
-    'a3 a4';
+    grid-template-areas:
+        'a1 a2'
+        'a3 a4';
 }
 
-#animal_photo1{
+#animal_photo1 {
     background-image: url(/img/animals/animal1.png);
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: a1;
 }
 
-#animal_photo2{
+#animal_photo2 {
     background-image: url(/img/animals/animal2.png);
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: a2;
 }
 
-#animal_photo3{
+#animal_photo3 {
     background-image: url(/img/animals/animal3.png);
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: a3;
 }
 
-#animal_photo4{
+#animal_photo4 {
     background-image: url(/img/animals/animal4.png);
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: a4;
 }
 
-#animal_collage img{
+#animal_collage img {
     width: 284.85px;
     height: 198px;
 }
 
-#animal_large{
+#animal_large {
     grid-area: al;
 }
 
 
-#animal_bottom_large{
-    grid-area: abl;
+#picture_bottom_large {
+    grid-area: pbl;
     background-image: url(/img/animals/snake_background.jpg);
     background-size: cover;
-    background-position: 0px -320px;
     background-repeat: no-repeat;
 }
 
 /* Meny sidans css */
 
-#container_menu{
-        height: auto;
-        display: grid;
-        grid-template-rows: 80px 40px auto auto auto; 
-        grid-template-areas: 
+#container_menu {
+    height: auto;
+    display: grid;
+    grid-template-rows: 80px 40px auto auto auto;
+    grid-template-areas:
         'heu'
         'nau'
         'str'
         'mac'
         'des';
-    } 
+}
 
-#starter{
+#starter {
     grid-area: str;
     min-height: 200px;
     display: flex;
 }
 
-#maincourse{
+#maincourse {
     grid-area: mac;
     min-height: 200px;
     display: flex;
 
 }
 
-#desert{
+#desert {
     grid-area: des;
     min-height: 200px;
     display: flex;
@@ -157,29 +214,29 @@ h2{
 
 /* Om oss sidans css */
 
-#container_about_us{
+#container_about_us {
     height: 200vh;
     display: grid;
-    grid-template-rows: 80px 40px 1fr 1fr 1fr; 
-    grid-template-areas: 
-    'heu'
-    'nau'
-    'plc'
-    'abz'
-    'emp';
-} 
+    grid-template-rows: 80px 40px 1fr 1fr 1fr;
+    grid-template-areas:
+        'heu'
+        'nau'
+        'plc'
+        'abz'
+        'emp';
+}
 
-#place{
+#place {
     grid-area: plc;
     background-color: blue;
 }
 
-#about_zoo{
+#about_zoo {
     grid-area: abz;
     background-color: red;
 }
 
-#employees{
+#employees {
     grid-area: emp;
     background-color: aqua;
 }
