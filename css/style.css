@@ -6,15 +6,21 @@ body {
 }
 
 h1 {
-    font-size: 34px;
+    font-size: 3rem;
     font-family: 'Lobster', cursive;
     margin: 0;
 }
 
 h2 {
-    font-size: 21px;
+    font-size: 2rem;
     height: fit-content;
     font-family: 'Josefin Slab', serif;
+}
+
+h3{
+    font-family: 'Josefin Slab', serif;
+    font-size: 21px;
+    margin: 0;
 }
 
 
@@ -196,42 +202,58 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    row-gap: 10px;
 }
 
 #maincourse {
     grid-area: mac;
     min-height: 200px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 10px;
 }
 
 #desert {
     grid-area: des;
     min-height: 200px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 10px;
 }
 
 .menu_item{
     display: flex;
-    background-size: contain;
-    background-repeat: no-repeat;
     background-color: white;
     width: 256px;
-    height: 512px;
+    height: 412px;
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 10%;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+.menu_item h3{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu_item img{
-    height: 50%;
+    background-color: black;
+    height: 256px;
     width: 100%;
     border-radius: 10% 10% 0% 0%;
 }
 
-#starter h2{
+#container_menu h2{
     display: flex;
     width: 100%;
     justify-content: center;
+    text-decoration: underline;
 }
 
 /* Om oss sidans css */
@@ -245,13 +267,13 @@ h2 {
     grid-template-areas:
         'heu'
         'nau'
-        'plc'
+        'loc'
         'abz'
         'emp';
 }
 
-#place {
-    grid-area: plc;
+#location {
+    grid-area: loc;
     background-color: blue;
 }
 
