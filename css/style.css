@@ -5,11 +5,27 @@ body {
     margin: 0;
 }
 
+/* .fixed_top_bar {
+    display: grid;
+    grid-area: ftb;
+    grid-template-rows: 50% 1fr;
+    grid-template-areas:
+        'heu'
+        'nau';
+} */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .header_universal {
     grid-area: heu;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .nav_universal {
@@ -62,9 +78,6 @@ body {
     background-color: #3e8e41;
 }
 
-
-
-
 h1 {
     font-size: 34px;
     font-family: 'Lobster', cursive;
@@ -83,7 +96,7 @@ h2 {
     background: repeating-linear-gradient(0deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     padding-left: 10px;
     padding-right: 10px;
-    height: 100vh;
+    height: 150vh;
     display: grid;
     row-gap: 5px;
     grid-template-columns: 1fr 8fr;
