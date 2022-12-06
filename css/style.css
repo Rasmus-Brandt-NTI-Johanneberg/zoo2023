@@ -5,20 +5,19 @@ body {
     margin: 0;
 }
 
-/* .fixed_top_bar {
-    display: grid;
-    grid-area: ftb;
-    grid-template-rows: 50% 1fr;
-    grid-template-areas:
-        'heu'
-        'nau';
-} */
+h1 {
+    font-size: 34px;
+    font-family: 'Lobster', cursive;
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
+
+h2 {
+    font-size: 21px;
+    height: fit-content;
+    font-family: 'Josefin Slab', serif;
+}
+
+/* Header och Nav CSS */
 
 .header_universal {
     grid-area: heu;
@@ -32,7 +31,6 @@ body {
     grid-area: nau;
     display: flex;
     justify-content: space-evenly;
-    flex: 1;
     align-items: center;
     border-bottom: solid;
 }
@@ -78,28 +76,18 @@ body {
     background-color: #3e8e41;
 }
 
-h1 {
-    font-size: 34px;
-    font-family: 'Lobster', cursive;
 
-}
-
-h2 {
-    font-size: 21px;
-    height: fit-content;
-    font-family: 'Josefin Slab', serif;
-}
 
 /* Hem sidans css */
 
 #container_home {
     background: repeating-linear-gradient(0deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 150vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100vh;
     display: grid;
     row-gap: 5px;
-    grid-template-columns: 1fr 8fr;
+    grid-template-columns: 1fr 90%;
     grid-template-rows: 5% 5% 5fr 3fr;
     grid-template-areas:
         'heu heu'
@@ -108,13 +96,12 @@ h2 {
         'pbl pbl';
 }
 
-
-
 #aside_home {
     grid-area: ash;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    padding-top: 10%;
 }
 
 #aside_home h2 {
@@ -129,8 +116,8 @@ h2 {
 #pictures_home {
     grid-area: pih;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 50% 1fr;
     grid-template-areas:
         'ac al'
         'ac al';
@@ -138,9 +125,11 @@ h2 {
 
 #animal_collage {
     grid-area: ac;
+    row-gap: 5px;
+    column-gap: 5px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 50% 1fr;
     grid-template-areas:
         'a1 a2'
         'a3 a4';
@@ -172,11 +161,6 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: a4;
-}
-
-#animal_collage img {
-    width: 284.85px;
-    height: 198px;
 }
 
 #animal_large {
