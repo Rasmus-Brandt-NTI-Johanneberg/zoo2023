@@ -173,7 +173,7 @@ h3{
 
 #picture_bottom_large {
     grid-area: pbl;
-    background-image: url(/img/animals/snake_background.jpg);
+    background-image: url(/img/animals/Snake_background.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
