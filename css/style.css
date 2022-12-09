@@ -114,9 +114,8 @@ h3{
 }
 
 #aside_home h3 {
-    display: flex;
     margin-bottom: 0px;
-    justify-content: center;
+    text-align: center;
 }
 
 #aside_home ul {
@@ -246,10 +245,8 @@ h3{
 }
 
 .menu_item h3{
-    display: flex;
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .menu_item img{
@@ -260,9 +257,8 @@ h3{
 }
 
 #container_menu h2{
-    display: flex;
+    text-align: center;
     width: 100%;
-    justify-content: center;
     text-decoration: underline;
 }
 
@@ -281,16 +277,36 @@ h3{
         'heu'
         'nau'
         'loc'
-        'abz'
+        'cou'
         'emp';
 }
 
 #location {
     grid-area: loc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 10px;
 }
 
-#about_zoo {
-    grid-area: abz;
+#location_text_div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+#container_about_us h2 {
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+#contact_us {
+    grid-area: cou;
 }
 
 #employees {
