@@ -39,6 +39,8 @@ h3{
     justify-content: space-evenly;
     align-items: center;
     border-bottom: solid;
+    width: 90%;
+    justify-self: center;
 }
 
 .nav_button {
@@ -88,12 +90,13 @@ h3{
 
 #container_home {
     background: repeating-linear-gradient(0deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 100vh;
+    height: 98vh;
     display: grid;
     row-gap: 5px;
-    grid-template-columns: 1fr 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 2vh;
+    grid-template-columns: 1fr 88%;
     grid-template-rows: auto 50px 3fr 2fr;
     grid-template-areas:
         'heu heu'
@@ -110,8 +113,19 @@ h3{
     padding-top: 5%;
 }
 
-#aside_home h2 {
+#aside_home h3 {
+    display: flex;
     margin-bottom: 0px;
+    justify-content: center;
+}
+
+#aside_home ul {
+    margin-top: 8px;
+}
+
+#aside_home li:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 
@@ -167,15 +181,16 @@ h3{
 
 #animal_large {
     grid-area: al;
-    background-color: blue;
+    background-image: url(/img/animals/snake_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -14vw;
+    margin-right: -20px;
 }
 
 
 #picture_bottom_large {
     grid-area: pbl;
-    background-image: url(/img/animals/Snake_background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 /* Meny sidans css */
@@ -188,6 +203,7 @@ h3{
     padding-right: 20px;
     row-gap: 5px;
     column-gap: 5px;
+    padding-bottom: 2vh;
     grid-template-rows: auto 50px auto auto auto;
     grid-template-areas:
         'heu'
@@ -197,31 +213,24 @@ h3{
         'des';
 }
 
-#starter {
-    grid-area: str;
+.menu_section{
     min-height: 200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     row-gap: 10px;
+}
+
+#starter {
+    grid-area: str;
 }
 
 #maincourse {
     grid-area: mac;
-    min-height: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    row-gap: 10px;
 }
 
 #desert {
     grid-area: des;
-    min-height: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    row-gap: 10px;
 }
 
 .menu_item{
