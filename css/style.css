@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Lobster&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Lobster&family=Raleway&display=swap');
 
 
 body {
@@ -106,7 +106,7 @@ p {
         'heu heu'
         'nau nau'
         'ash pih'
-        'pbl pbl';
+        'evs evs';
 }
 
 #aside_home {
@@ -196,8 +196,26 @@ p {
 }
 
 
-#picture_bottom_large {
-    grid-area: pbl;
+#events {
+    grid-area: evs;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    border-top: solid;
+}
+
+#events h2 {
+    text-decoration: underline;
+    width: 100%;
+    text-align: center;
+}
+
+#events p {
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Meny sidans css */
