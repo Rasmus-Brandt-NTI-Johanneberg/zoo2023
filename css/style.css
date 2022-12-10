@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Lobster&family=Raleway:wght@300&display=swap');
 
 
 body {
@@ -21,6 +21,10 @@ h3 {
     font-family: 'Josefin Slab', serif;
     font-size: 21px;
     margin: 0;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -127,6 +131,10 @@ h3 {
     text-decoration: underline;
 }
 
+#aside_home li p {
+    margin: 2px;
+}
+
 #pictures_home {
     grid-area: pih;
     display: grid;
@@ -184,6 +192,7 @@ h3 {
     background-size: cover;
     background-position: -14vw;
     margin-right: -20px;
+    margin-top: -5px;
 }
 
 
