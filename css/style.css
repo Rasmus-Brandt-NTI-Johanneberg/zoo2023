@@ -17,7 +17,7 @@ h2 {
     font-family: 'Josefin Slab', serif;
 }
 
-h3{
+h3 {
     font-family: 'Josefin Slab', serif;
     font-size: 21px;
     margin: 0;
@@ -86,7 +86,7 @@ h3{
 
 
 
-/* Hem sidans css */
+/* Start sidans css */
 
 #container_home {
     background: repeating-linear-gradient(0deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
@@ -126,7 +126,6 @@ h3{
     color: white;
     text-decoration: underline;
 }
-
 
 #pictures_home {
     grid-area: pih;
@@ -212,7 +211,7 @@ h3{
         'des';
 }
 
-.menu_section{
+.menu_section {
     min-height: 200px;
     display: flex;
     flex-wrap: wrap;
@@ -232,7 +231,7 @@ h3{
     grid-area: des;
 }
 
-.menu_item{
+.menu_item {
     display: flex;
     background-color: white;
     width: 256px;
@@ -244,18 +243,18 @@ h3{
     margin-left: 3rem;
 }
 
-.menu_item h3{
+.menu_item h3 {
     width: 100%;
     text-align: center;
 }
 
-.menu_item img{
+.menu_item img {
     height: 256px;
     width: 100%;
     border-radius: 10% 10% 0% 0%;
 }
 
-#container_menu h2{
+#container_menu h2 {
     text-align: center;
     width: 100%;
     text-decoration: underline;
@@ -300,7 +299,7 @@ h3{
     align-content: center;
 }
 
-#location_text_div{
+#location_text_div {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -324,7 +323,7 @@ h3{
     align-content: center;
 }
 
-#contact_us_text_div{
+#contact_us_text_div {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -336,5 +335,32 @@ h3{
 
 #employees {
     grid-area: emp;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 5px;
 }
 
+.employee_card {
+    display: flex;
+    width: 256px;
+    height: 412px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10%;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    border: solid;
+    border-width: 4px;
+}
+
+.employee_card h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.employee_card img {
+    height: 256px;
+    border-radius: 10% 10% 10% 10%;
+}
